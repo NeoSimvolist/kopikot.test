@@ -25,6 +25,7 @@ export class ApiService {
     }
 
     fetch() {
+        // i do it because your URL doesn't work
         return Observable.of(this.data).pipe(delay(1000));
         // return this.httpClient.get<DataItem[]>('​https://api.bonusway.com/campaigns?limit=10&offset=0');
     }
