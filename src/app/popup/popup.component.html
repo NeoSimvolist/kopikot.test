@@ -1,0 +1,19 @@
+<div *ngIf="warning" class="alert-warning">{{warning}}</div>
+
+<div *ngFor="let row of rows"
+     (click)="openClick($event)"
+     class="popup-row">
+    <div class="popup-row-preview"
+         [ngStyle]="{'background-image': 'url(' + row.url + ')'}"></div>
+    <div class="popup-row-body">{{row.title}}</div>
+</div>
+
+<div class="popup-row">
+    <div class="popup-row-body center">
+        <button (click)="fetchMore($event)"
+                class="btn btn-primary">
+            <span *ngIf="!loading">Еще...</span>
+            <span *ngIf="loading">Загрузка...</span>
+        </button>
+    </div>
+</div>

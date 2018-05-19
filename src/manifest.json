@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "kopikot",
+  "version": "1.0.0",
+  "permissions": [
+    "tabs",
+    "activeTab"
+  ],
+  "background": {
+    "page": "index.html#/event-page",
+    "persistent": true
+  },
+  "browser_action": {
+    "default_title": "kopikot",
+    "default_popup": "index.html#/popup",
+    "default_icon": "assets/default.png"
+  },
+  "icons": {
+    "16": "assets/default.png"
+  },
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+  "default_locale": "ru"
+}
