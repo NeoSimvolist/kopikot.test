@@ -18,7 +18,7 @@ export class ApiService {
     constructor(private httpClient: HttpClient) {
         this.data = Array.from(Array(10).keys()).map(value => {
             return {
-                title: 'just item #' + (value + 1),
+                title: 'just item',
                 url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWzHLRQWUvlyTimW7ux_NICk2-BM1NPYSK1Sy1laSEG-ecTnuZUg',
             };
         });
